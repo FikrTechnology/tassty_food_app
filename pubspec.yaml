@@ -17,3 +17,29 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/fonts/
+  fonts:
+    - family: ApfelGrotezk
+      fonts:
+        - asset: assets/fonts/apfelGrotesk/ApfelGrotezk-Fett.otf
+          weight: 700
+        - asset: assets/fonts/apfelGrotesk/ApfelGrotezk-Mittel.otf
+          weight: 500
+        - asset: assets/fonts/apfelGrotesk/ApfelGrotezk-Regular.otf
+          weight: 400
+
+    - family: PlusJakartaSans
+      fonts:
+        - asset: assets/fonts/plusJakartaSans/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/plusJakartaSans/PlusJakartaSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/plusJakartaSans/PlusJakartaSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/plusJakartaSans/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/plusJakartaSans/PlusJakartaSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/plusJakartaSans/PlusJakartaSans-SemiBold.ttf
+          weight: 600
