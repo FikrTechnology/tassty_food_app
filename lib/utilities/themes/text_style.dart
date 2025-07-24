@@ -29,12 +29,12 @@ class AppTypography {
     ),
     bodyMedium: TextStyle(
       fontFamily: plusJakartaSans,
-      fontWeight: FontWeight.w300,
+      fontWeight: FontWeight.w400,
       fontSize: 14,
     ),
     bodySmall: TextStyle(
       fontFamily: plusJakartaSans,
-      fontWeight: FontWeight.w300,
+      fontWeight: FontWeight.w400,
       fontSize: 12,
     ),
 
