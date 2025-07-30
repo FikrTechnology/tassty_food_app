@@ -10,21 +10,14 @@ class OnboardingSplashscreenPage extends StatefulWidget {
 
 class _OnboardingSplashscreenPageState
     extends State<OnboardingSplashscreenPage> {
-
   @override
   void initState() {
     super.initState();
-    startSplashScreen();
-  }
-
-  startSplashScreen() async {
-    await Future.delayed(const Duration(seconds: 5), () {});
-    return Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const OnboardingEducationalPage(),
-      ),
-    );
+    Future.delayed(const Duration(seconds: 5), () {
+      if (mounted) {
+        GoRouter.of(context).go('/educational');
+      }
+    });
   }
 
   @override

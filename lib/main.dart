@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tassty_food_app/presentation/views/pages.dart';
+import 'package:tassty_food_app/core/routes/app_router.dart';
+
 
 void main() {
   runApp(const MainApp());
@@ -10,9 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final appRouter = AppRouter();
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: OnboardingSplashscreenPage(),
+      routerConfig: appRouter.router,
     );
   }
 }

@@ -42,8 +42,6 @@ class _OnboardingEducationalPageState extends State<OnboardingEducationalPage> {
         curve: Curves.easeInOut,
       );
     } else {
-      // Navigate to the next page or finish onboarding
-      Navigator.pushReplacementNamed(context, '/home');
     }
   }
 
@@ -82,7 +80,7 @@ class _OnboardingEducationalPageState extends State<OnboardingEducationalPage> {
                         Text(
                           _pages[index]['title']!,
                           style: AppTypography.textTheme.headlineLarge!
-                              .copyWith(fontSize: 40),
+                              .copyWith(fontSize: 40, height: 1.2),
                           textAlign: TextAlign.center,
                         ),
                         const SizedBox(height: 10),
